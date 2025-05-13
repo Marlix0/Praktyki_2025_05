@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Nunito;
+    src: url(resources/Nunito/static/Nunito-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Nunito;
+}
+main{
+    background-image: url("resources/background-flowers.png");
+    width: 100%;
+    height: 750px;
+    display: flexbox;
+}
+#history-button-box{
+    background-color: white;
+    height: 150px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 25%;
+    border-radius: 0 0 25px 25px;
+}
+#history-button{
+    cursor: pointer;
+    top: 15%;
+    width: 400px;
+    height: 80px;
+    background-color: #006914;
+    position: relative;
+    color: white;
+    font-size: 32px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 #888888;
+    transition: 0.2s;
+}
+#history-button:hover{
+    transition: 0.2s;
+    background-color: #0b8321;
+    box-shadow: 0 0 25px 0 #888888;
+}
+footer{
+    width: 100%;
+    height: 270px;
+}
