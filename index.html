@@ -5,30 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generator Wyzwań</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div id="title-box">
             <p id="title">GENERATOR CODZIENNYCH WYZWAŃ</p>
         </div>
-            <img height="70%" id="plant1" src="resources/plant 1.png" alt="plant1">
+            <img height="75%" id="plant1" src="resources/plant 1.png" alt="plant1">
     </header>
     <main>
         <div id="challenges-box">
-            <p id="challenge-title">TYTUŁ WYZWANIA</p>
-            <p id="challenge-content">Daj sobie chwilę wytchnienia. Odłóż telefon i skup się na tu i teraz. Może spacer? A może filiżanka herbaty i cisza?</p>
-            <button id="history-button">HISTORIA</button>
-            <button id="complete-button">UKOŃCZONE</button>
+            <p id="challenge-title">WYLOSUJ WYZWANIE</p>
+            <p id="challenge-content">Kliknij różowy przycisk i zdaj się na los.</p>
+            <button id="history-button" onclick="historyOpen()">HISTORIA</button>
+            <button id="complete-button" onclick="completeChallenge()">UKOŃCZONE</button>
             <img src="resources/lotus 1.png" alt="lotus" id="lotus-img">
         </div>
+        <div id="history-box" class="w3-container w3-center w3-animate-opacity">
+            <div id="title-container">
+                <p id="history-title">HISTORIA</p>
+                <button id="x-button" onclick="closeHistory()"><img src="resources/crossed 1.png" alt="close-button"></button>
+            </div>
+            <div id="history-list">
+                <div class="history-list-items">NAPISZ KOMUŚ MIŁY KOMENTARZ</div>
+                <div class="history-list-items">NAPISZ KOMUŚ MIŁY KOMENTARZ</div>
+            </div>
+        </div>
         <div id="challenges-button-box">
-            <button id="challenge-button">WYLOSUJ WYZWANIE</button>
+            <button id="challenge-button" onclick="generateChallenge()">WYLOSUJ WYZWANIE</button>
         </div>
     </main>
     <footer>
-        <p>REGULAMIN</p>
-        <p>POLITYKA PRYWATNOŚCI</p>
-        <p>KONTAKT</p>
+        <div id="footer-content">
+            <p>REGULAMIN</p>
+            <p>POLITYKA PRYWATNOŚCI</p>
+            <p>KONTAKT</p>
+        </div>
     </footer>
 </body>
 </html>
